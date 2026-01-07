@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2.0,
+    "id": "analistproblem",
+    "name": "Problem Analytics",
+    "version": "1.0",
+    "namespace": "AnalistProblem",
+    "description": "This module will give analytical data for any Problem (Alert) in Zabbix",
+    "author": "Saumyajit Pramanik",
+    "actions": {
+        "problemanalist.view": {
+            "class": "CControllerAnalistProblemPopup",
+            "view": "problemanalist.view",
+            "layout": "layout.widget"
+        },
+        "problemanalist.service.get": {
+            "class": "CControllerAnalistServicePopup",
+            "layout": "layout.json"
+        }
+    },
+    "assets": {
+        "js": ["analist-problem.js"],
+        "css": ["dark-theme.css", "blue-theme.css"]
+    }
+}
